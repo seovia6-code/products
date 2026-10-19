@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SayInvo | AI-Powered Invoicing That Flows - Samaarav Products</title>
+  <meta name="description" content="Discover SayInvo, Samaarav's AI-powered invoicing platform. Create professional invoices in seconds, extract data from emails or documents, support 50+ currencies, and get paid faster.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend+Deca:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=2.3">
+</head>
+<body>
+
+  <!-- ======================================================================
+       NAVIGATION BAR (SAMAARAV HEADER)
+       ====================================================================== -->
+  <header class="samaarav-nav">
+    <div class="container nav-inner">
+      <a href="https://samaarav.com/" class="brand-logo" aria-label="Samaarav Home">
+        SAMAARAV<span>.</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="https://samaarav.com/" class="nav-link">Home</a></li>
+          <li><a href="https://samaarav.com/our-services/facebook-ads-marketing/" class="nav-link">Services</a></li>
+          <li><a href="index.html" class="nav-link">QwikRecruiters</a></li>
+          <li><a href="sayinvo.html" class="nav-link active">SayInvo</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#workflow" class="nav-link">How It Works</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="https://samaarav.com/contact/" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://sayinvo.com/login" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Sign In</a>
+        <a href="https://sayinvo.com/register" target="_blank" rel="noopener noreferrer" class="btn btn-sayinvo">Start Free</a>
+        <button class="nav-mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       PRODUCT ECOSYSTEM SWITCHER BAR
+       ====================================================================== -->
+  <div style="background: #fafbfa; padding: 24px 0 0;">
+    <div class="container">
+      <div class="product-ecosystem-bar">
+        <span class="product-ecosystem-label">Samaarav AI Products:</span>
+        <a href="index.html" class="product-switch-pill">
+          <span class="switch-dot"></span>
+          QwikRecruiters
+        </a>
+        <a href="sayinvo.html" class="product-switch-pill active-sayinvo">
+          <span class="switch-dot sayinvo"></span>
+          SayInvo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       HERO / SPOTLIGHT SECTION: SAYINVO (SAMAARAV FLAGSHIP PRODUCT #2)
+       ====================================================================== -->
+  <section class="hero-spotlight-section" id="product-hero">
+    <div class="container hero-spotlight-grid">
+      
+      <!-- Left: Value Proposition & Information -->
+      <div class="hero-spotlight-content">
+        <h1 class="hero-spotlight-title" style="color: #0f110f;">
+          Invoicing, <br>
+          Powered by AI
+        </h1>
+
+        <p class="hero-spotlight-desc">
+          Create professional, brand-tailored invoices in seconds with AI. Simply paste an email thread, chat transcript, or project brief, and let <strong>SayInvo</strong> extract client details, line items, and currencies automatically.
+        </p>
+
+        <!-- Metric Callouts -->
+        <div class="hero-metrics-row">
+          <div class="metric-item">
+            <div class="metric-val" style="color: #00d5a0;">90%</div>
+            <div class="metric-lbl">Time Saved on Invoicing</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">50+</div>
+            <div class="metric-lbl">Global Currencies</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">100%</div>
+            <div class="metric-lbl">Automated Math & Tax</div>
+          </div>
+        </div>
+
+        <!-- Call-to-action Buttons -->
+        <div class="hero-spotlight-actions">
+          <a href="https://sayinvo.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sayinvo" style="padding: 14px 30px; font-size: 0.95rem;">
+            Explore SayInvo ↗
+          </a>
+          <a href="https://sayinvo.com/register" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 14px 30px; font-size: 0.95rem;">
+            Get Started Free
+          </a>
+          <a href="#features" class="btn btn-ghost" style="padding: 14px 20px;">
+            See Features ↓
+          </a>
+        </div>
+
+        <div style="margin-top: 18px; font-size: 0.82rem; color: #64748b; display: flex; align-items: center; gap: 8px;">
+          <span style="color: #00d5a0; font-weight: bold;">✓</span> No credit card required · Free plan available with 5 invoices/month
+        </div>
+      </div>
+
+      <!-- Right: Desktop Showcase Graphic -->
+      <div class="hero-spotlight-media sayinvo">
+        <a href="https://sayinvo.com/" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; position: relative;">
+          <img src="sayinvo-preview.png" alt="SayInvo AI-Powered Invoicing Platform Interface" class="hero-mockup-img" loading="eager">
+          <div style="position: absolute; top: 16px; right: 16px; background: rgba(11, 17, 32, 0.85); backdrop-filter: blur(8px); padding: 6px 14px; border-radius: 9999px; border: 1px solid rgba(0, 213, 160, 0.4); font-size: 0.75rem; color: #00d5a0; font-weight: 700; display: flex; align-items: center; gap: 6px;">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #00d5a0; display: inline-block;"></span>
+            Live at sayinvo.com
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       INTERACTIVE TABS: CORE CAPABILITIES MATRIX (OPEN LAYOUT)
+       ====================================================================== -->
+  <section class="capabilities-section" id="features">
+    <div class="container">
+      <div class="section-intro-center">
+        <h2 class="section-title">Everything You Need for Effortless Invoicing</h2>
+        <p class="section-subtitle">
+          From natural language prompt extraction to multi-currency global settlement, explore how SayInvo streamlines your client billing cycle.
+        </p>
+      </div>
+
+      <!-- Tabs Navigation -->
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="ai-extract">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+          AI Data Extraction
+        </button>
+        <button class="tab-btn" data-tab="templates">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          Smart Brand Templates
+        </button>
+        <button class="tab-btn" data-tab="currencies">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          Multi-Currency &amp; Payments
+        </button>
+        <button class="tab-btn" data-tab="reports">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Recurring &amp; AI Analytics
+        </button>
+      </div>
+
+      <!-- Tab 1: AI Data Extraction -->
+      <div class="tab-pane active" id="tab-ai-extract">
+        <div class="tab-card-content">
+          <div class="tab-text">
+            <h3>Instant Extraction from Raw Text, Emails &amp; Messages</h3>
+            <p>
+              Forget manual data entry. Paste an email conversation, WhatsApp brief, or contract snippet directly into SayInvo. The AI engine instantly parses client information, line item descriptions, hours worked, hourly rates, and calculates subtotals with zero friction.
+            </p>
+            <ul class="tab-checklist">
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Natural language parsing (e.g. "Billed 40 hours for website redesign at $120/hr")</li>
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Automatic client identification and contact syncing</li>
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Line items, quantities, discounts, and payment terms extracted in seconds</li>
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Works with copy-pasted text, emails, or PDF documents</li>
+            </ul>
+          </div>
+          <div class="tab-mockup-box" style="background: #0b1120; border: 1px solid rgba(0, 213, 160, 0.25);">
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: #00d5a0; font-weight: 700; margin-bottom: 10px; display: flex; justify-content: space-between;">
+              <span>AI Extraction Engine</span>
+              <span style="color: #94a3b8;">Processing Speed: 0.8s</span>
+            </div>
+            <div style="background: rgba(255,255,255,0.04); border: 1px dashed rgba(0, 213, 160, 0.4); padding: 14px; border-radius: 8px; margin-bottom: 14px;">
+              <span style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase; font-weight: 600;">Input Text / Email:</span>
+              <p style="font-size: 0.85rem; color: #e2e8f0; margin-top: 4px; line-height: 1.4;">
+                "Hi Sarah, please invoice Acme Corp for 40 hours of Website Redesign at $120/hr, plus the agreed $500 branding collateral fee. Due in 30 days."
+              </p>
+            </div>
+            <div style="background: rgba(0, 213, 160, 0.08); border: 1px solid rgba(0, 213, 160, 0.3); padding: 14px; border-radius: 8px;">
+              <div style="font-size: 0.75rem; color: #00d5a0; font-weight: 700; margin-bottom: 8px;">✓ Structured Invoice Generated</div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.82rem; color: #cbd5e1; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <span>Website Redesign (40 hrs @ $120.00)</span>
+                <span style="font-weight: 600; color: #ffffff;">$4,800.00</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.82rem; color: #cbd5e1; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <span>Branding Collateral (Fixed Fee)</span>
+                <span style="font-weight: 600; color: #ffffff;">$500.00</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.92rem; color: #00d5a0; font-weight: 700; padding-top: 8px;">
+                <span>Total Amount Due (Net 30)</span>
+                <span>$5,300.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Smart Templates -->
+      <div class="tab-pane" id="tab-templates">
+        <div class="tab-card-content">
+          <div class="tab-text">
+            <h3>Professional Templates That Adapt to Your Brand</h3>
+            <p>
+              First impressions matter. SayInvo delivers stunning, responsive invoice templates crafted to look impeccably modern on mobile, desktop, and print. Add your logo, adjust primary accent colors, and configure personalized thank-you notes.
+            </p>
+            <ul class="tab-checklist">
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Dynamic color palette integration matching your visual identity</li>
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Custom logo upload, font pairing, and sleek header layouts</li>
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Pixel-perfect high-resolution PDF download and email delivery</li>
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Multi-language templates for global clientele</li>
+            </ul>
+          </div>
+          <div class="tab-mockup-box" style="background: #0b1120; border: 1px solid rgba(0, 213, 160, 0.25);">
+            <!-- Controls bar: Template themes & colors -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: #00d5a0; font-weight: 700; display: flex; align-items: center; gap: 6px;">
+                <span>🎨 Smart Template Designer</span>
+              </div>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <span style="font-size: 0.7rem; color: #94a3b8; margin-right: 4px;">Accents:</span>
+                <span style="width: 12px; height: 12px; border-radius: 50%; background: #00d5a0; border: 2px solid #ffffff; display: inline-block; box-shadow: 0 0 6px rgba(0,213,160,0.6);" title="Emerald Theme"></span>
+                <span style="width: 12px; height: 12px; border-radius: 50%; background: #38bdf8; display: inline-block; opacity: 0.7;" title="Cyan Theme"></span>
+                <span style="width: 12px; height: 12px; border-radius: 50%; background: #a78bfa; display: inline-block; opacity: 0.7;" title="Violet Theme"></span>
+                <span style="width: 12px; height: 12px; border-radius: 50%; background: #f59e0b; display: inline-block; opacity: 0.7;" title="Amber Theme"></span>
+              </div>
+            </div>
+
+            <!-- Mini Live Template Sheet -->
+            <div style="background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 16px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.5);">
+              <!-- Top Header of the invoice preview -->
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px dashed rgba(255, 255, 255, 0.12);">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <div style="width: 28px; height: 28px; border-radius: 6px; background: linear-gradient(135deg, #00d5a0 0%, #0284c7 100%); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.82rem; color: #0b1120;">
+                      S
+                    </div>
+                    <div>
+                      <div style="font-weight: 700; color: #f8fafc; font-size: 0.85rem; line-height: 1.1;">Samaarav Studio</div>
+                      <div style="font-size: 0.68rem; color: #94a3b8;">studio@samaarav.com</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="text-align: right;">
+                  <span style="display: inline-block; font-size: 0.68rem; font-weight: 700; color: #00d5a0; background: rgba(0, 213, 160, 0.12); border: 1px solid rgba(0, 213, 160, 0.3); padding: 2px 8px; border-radius: 4px; text-transform: uppercase;">INVOICE #INV-2026</span>
+                  <div style="font-size: 0.68rem; color: #94a3b8; margin-top: 4px;">Due: Net 30</div>
+                </div>
+              </div>
+
+              <!-- Client & Multi-language Bar -->
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.72rem; margin-bottom: 10px; background: rgba(255,255,255,0.03); padding: 6px 10px; border-radius: 6px;">
+                <span style="color: #cbd5e1;"><strong style="color: #ffffff;">Billed To:</strong> Vertex Labs Inc.</span>
+                <span style="color: #00d5a0; font-weight: 600; font-size: 0.7rem; display: flex; align-items: center; gap: 4px;">
+                  <span>🌐</span> EN | ES | FR | DE
+                </span>
+              </div>
+
+              <!-- Line Items Table -->
+              <div style="font-size: 0.75rem; margin-bottom: 10px;">
+                <div style="display: flex; justify-content: space-between; color: #64748b; font-size: 0.68rem; text-transform: uppercase; font-weight: 700; padding-bottom: 4px; border-bottom: 1px solid rgba(255,255,255,0.06);">
+                  <span>Description</span>
+                  <span>Amount</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; color: #e2e8f0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04);">
+                  <span>Enterprise SaaS Architecture Sprint</span>
+                  <span style="font-weight: 600; color: #ffffff;">$3,200.00</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; color: #e2e8f0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04);">
+                  <span>AI Workflow &amp; API Integration</span>
+                  <span style="font-weight: 600; color: #ffffff;">$1,650.00</span>
+                </div>
+              </div>
+
+              <!-- Totals row -->
+              <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 6px; border-top: 1px solid rgba(0, 213, 160, 0.3);">
+                <span style="font-size: 0.75rem; color: #94a3b8;">Total Amount Due</span>
+                <span style="font-size: 1.05rem; font-weight: 800; color: #00d5a0;">$4,850.00</span>
+              </div>
+            </div>
+
+            <!-- Export & Customization Badges -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px;">
+              <div style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); padding: 8px 10px; border-radius: 6px; text-align: center; font-size: 0.72rem; color: #e2e8f0;">
+                <span style="color: #00d5a0; display: block; font-weight: 700; margin-bottom: 2px;">⚡ Live Sync</span>
+                <span>Auto-brand logo &amp; color</span>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); padding: 8px 10px; border-radius: 6px; text-align: center; font-size: 0.72rem; color: #e2e8f0;">
+                <span style="color: #38bdf8; display: block; font-weight: 700; margin-bottom: 2px;">📄 Vector PDF</span>
+                <span>Print &amp; retina ready</span>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); padding: 8px 10px; border-radius: 6px; text-align: center; font-size: 0.72rem; color: #e2e8f0;">
+                <span style="color: #a78bfa; display: block; font-weight: 700; margin-bottom: 2px;">🌍 12+ Languages</span>
+                <span>Instant auto-translate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Multi-Currency & Payments -->
+      <div class="tab-pane" id="tab-currencies">
+        <div class="tab-card-content">
+          <div class="tab-text">
+            <h3>Global Support for 50+ Currencies &amp; One-Click Pay</h3>
+            <p>
+              Conduct business internationally without friction. SayInvo automatically converts rates across 50+ currencies using live market data, calculates regional sales taxes or VAT, and integrates seamlessly with Stripe and PayPal so clients pay instantly.
+            </p>
+            <ul class="tab-checklist">
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> 50+ world currencies supported (USD, EUR, GBP, CAD, AUD, JPY)</li>
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Real-time exchange rate calculation and multi-tax support</li>
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Native Stripe and PayPal one-click checkout links</li>
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Custom SMTP delivery via your own Gmail, Outlook, or Zoho mailbox</li>
+            </ul>
+          </div>
+          <div class="tab-mockup-box" style="background: #0b1120; border: 1px solid rgba(0, 213, 160, 0.25);">
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: #00d5a0; font-weight: 700; margin-bottom: 12px;">
+              Global Currency &amp; Payment Gateway
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px;">
+              <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; text-align: center;">
+                <div style="font-weight: 700; color: #00d5a0; font-size: 1.1rem;">USD $</div>
+                <div style="font-size: 0.7rem; color: #94a3b8;">US Dollar</div>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; text-align: center;">
+                <div style="font-weight: 700; color: #38bdf8; font-size: 1.1rem;">EUR €</div>
+                <div style="font-size: 0.7rem; color: #94a3b8;">Euro</div>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; text-align: center;">
+                <div style="font-weight: 700; color: #a78bfa; font-size: 1.1rem;">GBP £</div>
+                <div style="font-size: 0.7rem; color: #94a3b8;">British Pound</div>
+              </div>
+            </div>
+            <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); padding: 12px 16px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <div style="font-size: 0.8rem; font-weight: 600; color: #ffffff;">Instant Client Pay Link</div>
+                <div style="font-size: 0.72rem; color: #94a3b8;">Credit Card, Debit, Apple Pay &amp; PayPal</div>
+              </div>
+              <button style="background: #00d5a0; color: #0b1120; border: none; font-weight: 700; font-size: 0.78rem; padding: 6px 14px; border-radius: 6px;">Pay $4,800.00 ↗</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 4: Recurring & Analytics -->
+      <div class="tab-pane" id="tab-reports">
+        <div class="tab-card-content">
+          <div class="tab-text">
+            <h3>Automated Recurring Retainers &amp; Financial Intelligence</h3>
+            <p>
+              Set up automated subscription cycles for repeat clients and track business health from a unified cockpit. SayInvo's AI analytics detect overdue payments and deliver actionable financial recommendations to boost your cash flow.
+            </p>
+            <ul class="tab-checklist">
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Automated recurring invoices for ongoing retainers and subscriptions</li>
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Real-time revenue dashboards, payment tracking, and CSV exports</li>
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> Overdue invoice reminders sent automatically on schedule</li>
+              <li><span class="check-icon" style="color: #00d5a0;">✓</span> AI timing optimization (e.g., invoices sent midweek get paid 15% faster)</li>
+            </ul>
+          </div>
+          <div class="tab-mockup-box" style="background: #0b1120; border: 1px solid rgba(0, 213, 160, 0.25);">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+              <div style="background: rgba(255,255,255,0.04); padding: 14px; border-radius: 8px;">
+                <div style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase;">Total Invoiced</div>
+                <div style="font-size: 1.5rem; font-weight: 700; color: #00d5a0; margin-top: 2px;">$48,250</div>
+                <div style="font-size: 0.72rem; color: #10b981;">↑ +24% this month</div>
+              </div>
+              <div style="background: rgba(255,255,255,0.04); padding: 14px; border-radius: 8px;">
+                <div style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase;">Payment Velocity</div>
+                <div style="font-size: 1.5rem; font-weight: 700; color: #38bdf8; margin-top: 2px;">3.4 Days</div>
+                <div style="font-size: 0.72rem; color: #38bdf8;">Average settlement time</div>
+              </div>
+            </div>
+            <div style="background: rgba(0, 213, 160, 0.08); border-left: 3px solid #00d5a0; padding: 12px 14px; border-radius: 6px;">
+              <div style="font-size: 0.75rem; font-weight: 700; color: #00d5a0; text-transform: uppercase;">💡 AI Recommendation</div>
+              <p style="font-size: 0.8rem; color: #e2e8f0; margin-top: 3px; line-height: 1.4;">
+                "Invoices sent on Tuesdays and Wednesdays get paid 15% faster. Schedule delivery for mid-week to minimize payment delays."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       6-STEP INVOICING WORKFLOW ENGINE
+       ====================================================================== -->
+  <section class="workflow-section" id="workflow">
+    <div class="container">
+      <div class="section-intro-center">
+        <h2 class="section-title">How SayInvo Works in 6 Simple Steps</h2>
+        <p class="section-subtitle">
+          From conversational prompt to payment in your bank account, experience the streamlined future of business billing.
+        </p>
+      </div>
+
+      <div class="workflow-grid">
+        <!-- Step 1 -->
+        <div class="workflow-step-card">
+          <span class="step-number-badge" style="color: #00d5a0;">Step 1</span>
+          <h3 class="step-card-title">Prompt or Paste</h3>
+          <p class="step-card-desc">
+            Type a prompt in natural conversational English, paste an email thread, or describe the work you completed for your client.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="workflow-step-card">
+          <span class="step-number-badge" style="color: #00d5a0;">Step 2</span>
+          <h3 class="step-card-title">AI Data Extraction</h3>
+          <p class="step-card-desc">
+            SayInvo extracts client information, hours, rates, line items, and deliverables with instant accuracy.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="workflow-step-card">
+          <span class="step-number-badge" style="color: #00d5a0;">Step 3</span>
+          <h3 class="step-card-title">Template &amp; Brand Styling</h3>
+          <p class="step-card-desc">
+            Apply your brand logo, corporate colors, and tailored payment terms with a single click.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="workflow-step-card">
+          <span class="step-number-badge" style="color: #00d5a0;">Step 4</span>
+          <h3 class="step-card-title">Multi-Currency &amp; Taxes</h3>
+          <p class="step-card-desc">
+            Select from 50+ currencies. SayInvo auto-calculates live conversion rates, discounts, and regional VAT/tax.
+          </p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="workflow-step-card">
+          <span class="step-number-badge" style="color: #00d5a0;">Step 5</span>
+          <h3 class="step-card-title">Custom SMTP Delivery</h3>
+          <p class="step-card-desc">
+            Send the invoice directly from your own Gmail, Outlook, or Zoho email address for maximum deliverability.
+          </p>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="workflow-step-card">
+          <span class="step-number-badge" style="color: #00d5a0;">Step 6</span>
+          <h3 class="step-card-title">1-Click Pay &amp; Analytics</h3>
+          <p class="step-card-desc">
+            Clients pay seamlessly via credit card or PayPal. SayInvo logs payment confirmation and updates financial reports.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       TRANSPARENT PRICING PLANS (FROM SAYINVO.COM)
+       ====================================================================== -->
+  <section class="pricing-preview-section" id="pricing" style="background: #fafbfa;">
+    <div class="container">
+      <div class="section-intro-center">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">
+          Choose the plan that works best for your business. Upgrade or cancel anytime.
+        </p>
+
+        <!-- Billing Toggle -->
+        <div class="pricing-billing-toggle">
+          <button class="billing-toggle-btn active" id="btn-monthly">Monthly</button>
+          <button class="billing-toggle-btn" id="btn-yearly">
+            Yearly
+            <span class="billing-discount-badge">-17%</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="pricing-cards-grid four-cols">
+        
+        <!-- Free Tier -->
+        <div class="pricing-card">
+          <h3 class="tier-name">Free</h3>
+          <p class="tier-subtitle">For freelancers just starting out</p>
+          <div class="tier-price">
+            <span class="currency">$</span>
+            <span class="amount">0</span>
+            <span class="period">/mo</span>
+          </div>
+          <ul class="tier-features">
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> 5 invoices/month</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> 3 clients</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> 1 template</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> 20 AI requests/month</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> Basic PDF download</li>
+          </ul>
+          <a href="https://sayinvo.com/register" target="_blank" rel="noopener noreferrer" class="btn btn-secondary tier-btn">
+            Get Started Free
+          </a>
+        </div>
+
+        <!-- Starter Tier -->
+        <div class="pricing-card">
+          <h3 class="tier-name">Starter</h3>
+          <p class="tier-subtitle">For solo pros &amp; active contractors</p>
+          <div class="tier-price">
+            <span class="currency">$</span>
+            <span class="amount" data-monthly="9" data-yearly="7.5">9</span>
+            <span class="period" data-period-monthly="/mo" data-period-yearly="/mo (billed $90/yr)">/mo</span>
+          </div>
+          <ul class="tier-features">
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> 50 invoices/month</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> 20 clients</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> 5 templates</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> 100 AI requests/month</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> Email invoice delivery</li>
+          </ul>
+          <a href="https://sayinvo.com/register" target="_blank" rel="noopener noreferrer" class="btn btn-secondary tier-btn">
+            Start Starter
+          </a>
+        </div>
+
+        <!-- Professional Tier (Featured) -->
+        <div class="pricing-card featured-card">
+          <span class="featured-pill-tag">Most Popular</span>
+          <h3 class="tier-name">Professional</h3>
+          <p class="tier-subtitle">Best value for growing teams &amp; agencies</p>
+          <div class="tier-price">
+            <span class="currency">$</span>
+            <span class="amount" data-monthly="29" data-yearly="24.1" style="color: #00d5a0;">29</span>
+            <span class="period" data-period-monthly="/mo" data-period-yearly="/mo (billed $290/yr)">/mo</span>
+          </div>
+          <ul class="tier-features">
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> <strong>Unlimited</strong> invoices</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> <strong>Unlimited</strong> clients</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> <strong>Unlimited</strong> templates</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> 500 AI requests/month</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> Recurring invoices &amp; auto-billing</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> AI Financial Insights &amp; Analytics</li>
+          </ul>
+          <a href="https://sayinvo.com/register" target="_blank" rel="noopener noreferrer" class="btn btn-sayinvo tier-btn">
+            Start Free Trial
+          </a>
+        </div>
+
+        <!-- Enterprise Tier -->
+        <div class="pricing-card">
+          <h3 class="tier-name">Enterprise</h3>
+          <p class="tier-subtitle">For scale-ups and high-volume billing</p>
+          <div class="tier-price">
+            <span class="currency">$</span>
+            <span class="amount" data-monthly="99" data-yearly="82.5">99</span>
+            <span class="period" data-period-monthly="/mo" data-period-yearly="/mo (billed $990/yr)">/mo</span>
+          </div>
+          <ul class="tier-features">
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> Everything in Professional</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> <strong>Unlimited</strong> AI requests</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> Dedicated client portal</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> Up to 10 team members</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> Custom SMTP &amp; API access</li>
+            <li class="tier-feature-item"><span class="check-icon" style="color: #00d5a0;">✓</span> 24/7 dedicated account manager</li>
+          </ul>
+          <a href="https://sayinvo.com/register" target="_blank" rel="noopener noreferrer" class="btn btn-secondary tier-btn">
+            Contact Sales
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       VERIFIED CUSTOMER TESTIMONIALS
+       ====================================================================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-intro-center">
+        <h2 class="section-title">Loved by Freelancers &amp; Businesses Worldwide</h2>
+        <p class="section-subtitle">
+          See what our customers have to say about saving time and accelerating payment cycles with SayInvo.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div style="color: #00d5a0; font-size: 1.2rem; margin-bottom: 12px;">★★★★★</div>
+          <p class="testimonial-quote">
+            "SayInvo cut my invoicing time by 90%. The AI extraction is like magic — I just paste an email and the invoice is ready with all lines and taxes configured."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: #e0fbf4; color: #0a8f6d;">MR</div>
+            <div>
+              <div class="author-name">Marcus Reed</div>
+              <div class="author-role">Agency Founder &amp; UI Designer</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div style="color: #00d5a0; font-size: 1.2rem; margin-bottom: 12px;">★★★★★</div>
+          <p class="testimonial-quote">
+            "We switched from QuickBooks and never looked back. The recurring invoices, custom SMTP delivery, and payment tracking save us hours every week."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: #e0fbf4; color: #0a8f6d;">EK</div>
+            <div>
+              <div class="author-name">Elena Kostas</div>
+              <div class="author-role">Managing Director, Studio Apex</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div style="color: #00d5a0; font-size: 1.2rem; margin-bottom: 12px;">★★★★★</div>
+          <p class="testimonial-quote">
+            "My clients love the professional invoices and the easy payment options. I get paid faster than ever before, and the multi-currency conversion is flawless."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: #e0fbf4; color: #0a8f6d;">DL</div>
+            <div>
+              <div class="author-name">David Lin</div>
+              <div class="author-role">Independent Software Consultant</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       BOTTOM CALL TO ACTION BANNER
+       ====================================================================== -->
+  <section class="container" style="margin-bottom: 80px;">
+    <div class="cta-box" style="background: radial-gradient(circle at 80% 20%, rgba(0, 213, 160, 0.15) 0%, transparent 60%), #0b1120; border: 1px solid rgba(0, 213, 160, 0.25);">
+      <h2 style="font-size: clamp(2rem, 3.5vw, 2.8rem); font-family: var(--font-heading); color: #ffffff; margin-bottom: 16px; letter-spacing: -0.02em;">
+        Ready to Streamline Your Business Invoicing with AI?
+      </h2>
+      <p style="color: #94a3b8; max-width: 620px; margin: 0 auto 32px; font-size: 1.05rem; line-height: 1.7;">
+        Join thousands of businesses creating professional, high-converting invoices in seconds. Start free today with no credit card required.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="https://sayinvo.com/register" target="_blank" rel="noopener noreferrer" class="btn btn-sayinvo" style="padding: 14px 32px; font-size: 1rem;">
+          Get Started Free on SayInvo ↗
+        </a>
+        <a href="index.html" class="btn btn-ghost" style="border-color: rgba(255,255,255,0.2); color: #ffffff;">
+          ← View QwikRecruiters
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SAMAARAV OFFICIAL FOOTER
+       ====================================================================== -->
+  <footer class="samaarav-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <h3>SAMAARAV</h3>
+          <p>
+            Connecting exceptional technology talent with businesses building what's next. Providing advanced digital services and proprietary AI platforms.
+          </p>
+        </div>
+
+        <!-- Products Column -->
+        <div>
+          <h4 class="footer-col-title">Our Products</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">QwikRecruiters</a></li>
+            <li><a href="sayinvo.html" style="color: #00d5a0; font-weight: 600;">SayInvo</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Column -->
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="https://samaarav.com/our-services/facebook-ads-marketing/">Facebook Ads Marketing</a></li>
+            <li><a href="https://samaarav.com/">Technology Solutions</a></li>
+            <li><a href="https://samaarav.com/">Contract Staffing</a></li>
+            <li><a href="https://samaarav.com/">ERP Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Offices & Contact -->
+        <div>
+          <h4 class="footer-col-title">Offices &amp; Contact</h4>
+          <div style="font-size: 0.88rem; line-height: 1.8; display: flex; flex-direction: column; gap: 8px;">
+            <p><strong>Registered Office:</strong><br>124 City Road, London, EC1V 2NX, UK</p>
+            <p><strong>Branch:</strong><br>44 Widnell Lane, Edinburgh, Scotland, UK</p>
+            <p style="margin-top: 6px;">
+              <a href="tel:+447550051466" style="color: var(--color-primary); font-weight: 600;">+44 7550051466</a><br>
+              <a href="mailto:info@samaarav.co.uk" style="color: #94a3b8;">info@samaarav.co.uk</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Samaarav &amp; SayInvo. All rights reserved.</p>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" style="color: #94a3b8;">Privacy Policy</a>
+          <a href="#" style="color: #94a3b8;">Terms of Service</a>
+          <a href="https://samaarav.com/contact/" style="color: #94a3b8;">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       INTERACTIVE JAVASCRIPT: TABS, BILLING TOGGLE & SMOOTH SCROLLING
+       ====================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Interactive Capabilities Tabs Switcher
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabPanes = document.querySelectorAll('.tab-pane');
+
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const targetTabId = 'tab-' + button.getAttribute('data-tab');
+
+          // Reset active states
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabPanes.forEach(pane => pane.classList.remove('active'));
+
+          // Set current active
+          button.classList.add('active');
+          const targetPane = document.getElementById(targetTabId);
+          if (targetPane) {
+            targetPane.classList.add('active');
+          }
+        });
+      });
+
+      // Monthly / Yearly Pricing Toggle
+      const btnMonthly = document.getElementById('btn-monthly');
+      const btnYearly = document.getElementById('btn-yearly');
+      const priceAmounts = document.querySelectorAll('.amount[data-monthly]');
+      const pricePeriods = document.querySelectorAll('.period[data-period-monthly]');
+
+      if (btnMonthly && btnYearly) {
+        btnMonthly.addEventListener('click', () => {
+          btnMonthly.classList.add('active');
+          btnYearly.classList.remove('active');
+
+          priceAmounts.forEach(el => {
+            el.textContent = el.getAttribute('data-monthly');
+          });
+          pricePeriods.forEach(el => {
+            el.textContent = el.getAttribute('data-period-monthly');
+          });
+        });
+
+        btnYearly.addEventListener('click', () => {
+          btnYearly.classList.add('active');
+          btnMonthly.classList.remove('active');
+
+          priceAmounts.forEach(el => {
+            el.textContent = el.getAttribute('data-yearly');
+          });
+          pricePeriods.forEach(el => {
+            el.textContent = el.getAttribute('data-period-yearly');
+          });
+        });
+      }
+
+      // Mobile Navigation Drawer Toggle
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
+      if (mobileBtn && navLinks) {
+        mobileBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('mobile-open');
+        });
+        navLinks.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            navLinks.classList.remove('mobile-open');
+          });
+        });
+      }
+
+      // Smooth scroll for in-page anchors
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const targetId = this.getAttribute('href');
+          if (targetId && targetId !== '#') {
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              e.preventDefault();
+              targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

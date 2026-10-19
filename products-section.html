@@ -1,0 +1,442 @@
+<!-- ==========================================================================
+     SAMAARAV "OUR PRODUCTS" EMBEDDABLE SECTION SNIPPET
+     Featuring QwikRecruiters (http://qwikrecruiters.com/)
+     Copy and paste directly into any page (WordPress, Elementor, HTML, Next.js)
+     ========================================================================== -->
+
+<!-- Scoped CSS for the Products Section -->
+<style>
+  .smrv-products-wrapper {
+    font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #fafbfa;
+    color: #1f2937;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .smrv-products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Section Header */
+  .smrv-section-head {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 56px;
+  }
+
+  .smrv-pill-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    background-color: #e6f9f3;
+    color: #0d825f;
+    border: 1px solid rgba(24, 203, 150, 0.3);
+    margin-bottom: 16px;
+  }
+
+  .smrv-pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #18cb96;
+    animation: smrv-pulse 2s infinite ease-in-out;
+  }
+
+  @keyframes smrv-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.85); }
+  }
+
+  .smrv-head-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    color: #0f110f;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+  }
+
+  .smrv-head-title span {
+    background: linear-gradient(135deg, #0f110f 30%, #18cb96 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .smrv-head-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    color: #64748b;
+    line-height: 1.7;
+  }
+
+  /* Flagship Product Showcase (Open 2-Column Layout) */
+  .smrv-product-box {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .smrv-product-info {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .smrv-meta-tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .smrv-tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 12px;
+    border-radius: 9999px;
+  }
+
+  .smrv-tag-primary {
+    background: #e6f9f3;
+    color: #0d825f;
+  }
+
+  .smrv-tag-ai {
+    background: #eef2ff;
+    color: #4f46e5;
+  }
+
+  .smrv-product-name {
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    font-weight: 700;
+    color: #0f110f;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .smrv-prod-tagline {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #14b584;
+    margin-bottom: 16px;
+  }
+
+  .smrv-prod-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  .smrv-key-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .smrv-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .smrv-feat-icon {
+    width: 32px;
+    height: 32px;
+    background: #e6f9f3;
+    color: #14b584;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-weight: bold;
+  }
+
+  .smrv-feat-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0f110f;
+    margin-bottom: 2px;
+  }
+
+  .smrv-feat-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.35;
+  }
+
+  .smrv-btn-group {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .smrv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+  }
+
+  .smrv-btn-brand {
+    background: #18cb96;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(24, 203, 150, 0.3);
+  }
+
+  .smrv-btn-brand:hover {
+    background: #14b584;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(24, 203, 150, 0.4);
+  }
+
+  .smrv-btn-ghost {
+    background: #ffffff;
+    color: #0f110f;
+    border: 1px solid #e4e7e4;
+  }
+
+  .smrv-btn-ghost:hover {
+    border-color: #0f110f;
+    transform: translateY(-2px);
+  }
+
+  /* Product Graphic / Mockup Section */
+  .smrv-product-graphic {
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .smrv-graphic-img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  .smrv-graphic-img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 55px -12px rgba(0, 0, 0, 0.16);
+  }
+
+  /* 3-Column Mini Capability Cards */
+  .smrv-mini-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .smrv-mini-card {
+    background: #ffffff;
+    border: 1px solid #e4e7e4;
+    border-radius: 18px;
+    padding: 24px 20px;
+    transition: all 0.25s ease;
+  }
+
+  .smrv-mini-card:hover {
+    border-color: rgba(24, 203, 150, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  }
+
+  .smrv-mini-num {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #14b584;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .smrv-mini-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f110f;
+    margin-bottom: 8px;
+  }
+
+  .smrv-mini-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 900px) {
+    .smrv-product-box {
+      grid-template-columns: 1fr;
+    }
+    .smrv-product-info {
+      padding: 32px 24px;
+    }
+    .smrv-mini-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<!-- ==========================================================================
+     OUR PRODUCTS SECTION
+     ========================================================================== -->
+<section class="smrv-products-wrapper" id="our-products">
+  <div class="smrv-products-container">
+    
+    <!-- Section Header -->
+    <div class="smrv-section-head">
+      <div class="smrv-pill-badge">
+        <span class="smrv-pulse-dot"></span>
+        Samaarav Software Products
+      </div>
+      <h2 class="smrv-head-title">
+        Enterprise Automation & <br>
+        <span>Proprietary AI Solutions</span>
+      </h2>
+      <p class="smrv-head-subtitle">
+        Engineered to supercharge hiring and operations. Explore our cutting-edge suite of products built by Samaarav.
+      </p>
+    </div>
+
+    <!-- Product Card: QwikRecruiters -->
+    <div class="smrv-product-box">
+      
+      <!-- Product Details -->
+      <div class="smrv-product-info">
+        <div class="smrv-meta-tags">
+          <span class="smrv-tag smrv-tag-primary">Product #1 • Flagship</span>
+          <span class="smrv-tag smrv-tag-ai">AI Voice Interviewer</span>
+        </div>
+
+        <h3 class="smrv-product-name">
+          QwikRecruiters
+        </h3>
+        
+        <p class="smrv-prod-tagline">
+          AI-Powered Voice Interview & Candidate Screening Platform
+        </p>
+
+        <p class="smrv-prod-desc">
+          Focus on AI to conduct hundreds of interviews in minutes, creating faster insights with human-like precision. With adaptive conversational interviewers (Explorer Lisa and Bob), QwikRecruiters automates technical and behavioral initial evaluations.
+        </p>
+
+        <!-- Key Features Grid -->
+        <div class="smrv-key-features">
+          <div class="smrv-feature-item">
+            <div class="smrv-feat-icon">🎙️</div>
+            <div>
+              <div class="smrv-feat-title">AI Voice Agents</div>
+              <div class="smrv-feat-desc">Human-like conversational screening with Lisa & Bob.</div>
+            </div>
+          </div>
+
+          <div class="smrv-feature-item">
+            <div class="smrv-feat-icon">📄</div>
+            <div>
+              <div class="smrv-feat-title">Knowledge Transfer</div>
+              <div class="smrv-feat-desc">Upload job descriptions to auto-generate questions.</div>
+            </div>
+          </div>
+
+          <div class="smrv-feature-item">
+            <div class="smrv-feat-icon">📊</div>
+            <div>
+              <div class="smrv-feat-title">Sentiment & Scores</div>
+              <div class="smrv-feat-desc">Instant communication ratings & fit scores.</div>
+            </div>
+          </div>
+
+          <div class="smrv-feature-item">
+            <div class="smrv-feat-icon">⚡</div>
+            <div>
+              <div class="smrv-feat-title">Scale Instantly</div>
+              <div class="smrv-feat-desc">Screen hundreds of candidates simultaneously 24/7.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="smrv-btn-group">
+          <a href="http://qwikrecruiters.com/" target="_blank" rel="noopener noreferrer" class="smrv-btn smrv-btn-brand">
+            Explore QwikRecruiters ↗
+          </a>
+          <a href="http://qwikrecruiters.com/sign-up" target="_blank" rel="noopener noreferrer" class="smrv-btn smrv-btn-ghost">
+            Get Started Free
+          </a>
+        </div>
+      </div>
+
+      <!-- Graphic / Mockup Preview -->
+      <div class="smrv-product-graphic">
+        <a href="http://qwikrecruiters.com/" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%;">
+          <img src="qwikrecruiters-preview.png" alt="QwikRecruiters Dashboard Screenshot" class="smrv-graphic-img" loading="lazy">
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Mini Product Capability Highlights -->
+    <div class="smrv-mini-cards">
+      <div class="smrv-mini-card">
+        <span class="smrv-mini-num">Feature 01</span>
+        <h4 class="smrv-mini-title">Dynamic Follow-Ups</h4>
+        <p class="smrv-mini-desc">
+          AI agents listen actively and ask contextual follow-up questions just like a seasoned hiring manager.
+        </p>
+      </div>
+
+      <div class="smrv-mini-card">
+        <span class="smrv-mini-num">Feature 02</span>
+        <h4 class="smrv-mini-title">Clerk Org Management</h4>
+        <p class="smrv-mini-desc">
+          Seamless multi-tenant organization management, custom branding, and team collaboration.
+        </p>
+      </div>
+
+      <div class="smrv-mini-card">
+        <span class="smrv-mini-num">Feature 03</span>
+        <h4 class="smrv-mini-title">Flexible Pricing Tiers</h4>
+        <p class="smrv-mini-desc">
+          Starter (5 credits), Growth (50 credits), and Pro (unlimited) plans to match any hiring volume.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>

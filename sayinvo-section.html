@@ -1,0 +1,457 @@
+<!-- ==========================================================================
+     SAMAARAV "OUR PRODUCTS" EMBEDDABLE SECTION SNIPPET: SAYINVO
+     Featuring SayInvo (https://sayinvo.com/)
+     Copy and paste directly into any page (WordPress, Elementor, HTML, Next.js)
+     ========================================================================== -->
+
+<!-- Scoped CSS for SayInvo Product Section -->
+<style>
+  .smrv-sayinvo-wrapper {
+    font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #fafbfa;
+    color: #1f2937;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .smrv-sayinvo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Section Header */
+  .smrv-sayinvo-head {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 56px;
+  }
+
+  .smrv-sayinvo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    background-color: #e0fbf4;
+    color: #0a8f6d;
+    border: 1px solid rgba(0, 213, 160, 0.35);
+    margin-bottom: 16px;
+  }
+
+  .smrv-sayinvo-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #00d5a0;
+    animation: smrv-sayinvo-pulse 2s infinite ease-in-out;
+  }
+
+  @keyframes smrv-sayinvo-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.85); }
+  }
+
+  .smrv-sayinvo-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    color: #0b1120;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+  }
+
+  .smrv-sayinvo-title span {
+    background: linear-gradient(135deg, #0b1120 20%, #00d5a0 70%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .smrv-sayinvo-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    color: #64748b;
+    line-height: 1.7;
+  }
+
+  /* Flagship Product Showcase (Open 2-Column Layout) */
+  .smrv-sayinvo-box {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .smrv-sayinvo-info {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .smrv-sayinvo-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+
+  .smrv-sayinvo-flagship {
+    background: #0b1120;
+    color: #00d5a0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .smrv-sayinvo-tech {
+    background: #e0fbf4;
+    color: #0a8f6d;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .smrv-sayinvo-link {
+    font-size: 0.78rem;
+    color: #64748b;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s ease;
+  }
+
+  .smrv-sayinvo-link:hover {
+    color: #00d5a0;
+  }
+
+  .smrv-sayinvo-name {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 700;
+    color: #0b1120;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .smrv-sayinvo-tagline {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #00d5a0;
+    margin-bottom: 16px;
+  }
+
+  .smrv-sayinvo-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  .smrv-sayinvo-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .smrv-sayinvo-feat-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .smrv-sayinvo-feat-icon {
+    width: 32px;
+    height: 32px;
+    background: #e0fbf4;
+    color: #0a8f6d;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .smrv-sayinvo-feat-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0b1120;
+    margin-bottom: 2px;
+  }
+
+  .smrv-sayinvo-feat-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.35;
+  }
+
+  .smrv-sayinvo-btn-group {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .smrv-sayinvo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+  }
+
+  .smrv-sayinvo-btn-brand {
+    background: #00d5a0;
+    color: #0b1120;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(0, 213, 160, 0.3);
+  }
+
+  .smrv-sayinvo-btn-brand:hover {
+    background: #00bc8d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 213, 160, 0.4);
+  }
+
+  .smrv-sayinvo-btn-ghost {
+    background: #ffffff;
+    color: #0b1120;
+    border: 1px solid #e4e7e4;
+  }
+
+  .smrv-sayinvo-btn-ghost:hover {
+    border-color: #0b1120;
+    transform: translateY(-2px);
+  }
+
+  .smrv-sayinvo-graphic {
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .smrv-sayinvo-img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 45px -10px rgba(0, 213, 160, 0.2), 0 0 0 1px rgba(0, 213, 160, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .smrv-sayinvo-img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px -10px rgba(0, 213, 160, 0.3);
+  }
+
+  /* Mini Highlights Grid */
+  .smrv-sayinvo-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #e4e7e4;
+  }
+
+  .smrv-sayinvo-card {
+    background: #ffffff;
+    border: 1px solid #e4e7e4;
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.25s ease;
+  }
+
+  .smrv-sayinvo-card:hover {
+    border-color: #00d5a0;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 213, 160, 0.12);
+  }
+
+  .smrv-sayinvo-num {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00d5a0;
+    letter-spacing: 0.08em;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .smrv-sayinvo-card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0b1120;
+    margin-bottom: 8px;
+  }
+
+  .smrv-sayinvo-card-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    color: #64748b;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 991px) {
+    .smrv-sayinvo-box {
+      grid-template-columns: 1fr;
+    }
+    .smrv-sayinvo-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<!-- ==========================================================================
+     SAYINVO EMBEDDABLE SECTION HTML
+     ========================================================================== -->
+<section class="smrv-sayinvo-wrapper" id="sayinvo-showcase">
+  <div class="smrv-sayinvo-container">
+    
+    <!-- Section Header -->
+    <div class="smrv-sayinvo-head">
+      <div class="smrv-sayinvo-badge">
+        <span class="smrv-sayinvo-dot"></span>
+        Samaarav Flagship Product #2
+      </div>
+      <h2 class="smrv-sayinvo-title">
+        Next-Gen <span>AI Invoicing Platform</span>
+      </h2>
+      <p class="smrv-sayinvo-subtitle">
+        Eliminate billing bottlenecks with automated AI invoice generation, natural language email extraction, and multi-currency global payments.
+      </p>
+    </div>
+
+    <!-- Product Showcase (2-Column Open Layout) -->
+    <div class="smrv-sayinvo-box">
+      
+      <!-- Left Column: Details & Value Proposition -->
+      <div class="smrv-sayinvo-info">
+        <div class="smrv-sayinvo-meta">
+          <span class="smrv-sayinvo-flagship">Flagship Product #2</span>
+          <span class="smrv-sayinvo-tech">AI Invoicing &amp; Billing</span>
+          <a href="https://sayinvo.com/" target="_blank" rel="noopener noreferrer" class="smrv-sayinvo-link">
+            sayinvo.com ↗
+          </a>
+        </div>
+
+        <h3 class="smrv-sayinvo-name">SayInvo</h3>
+        
+        <p class="smrv-sayinvo-tagline">
+          AI-Powered Invoicing That Flows
+        </p>
+
+        <p class="smrv-sayinvo-desc">
+          Create professional, brand-tailored invoices in seconds. Paste an email thread, chat conversation, or project scope, and let SayInvo automatically extract line items, calculate hours, convert 50+ currencies, and deliver via your custom email.
+        </p>
+
+        <!-- Key Features Grid -->
+        <div class="smrv-sayinvo-features">
+          <div class="smrv-sayinvo-feat-item">
+            <div class="smrv-sayinvo-feat-icon">⚡</div>
+            <div>
+              <div class="smrv-sayinvo-feat-title">AI Data Extraction</div>
+              <div class="smrv-sayinvo-feat-desc">Paste emails or chats to auto-generate invoices.</div>
+            </div>
+          </div>
+
+          <div class="smrv-sayinvo-feat-item">
+            <div class="smrv-sayinvo-feat-icon">🎨</div>
+            <div>
+              <div class="smrv-sayinvo-feat-title">Smart Templates</div>
+              <div class="smrv-sayinvo-feat-desc">Designer templates that adapt to your brand colors.</div>
+            </div>
+          </div>
+
+          <div class="smrv-sayinvo-feat-item">
+            <div class="smrv-sayinvo-feat-icon">🌐</div>
+            <div>
+              <div class="smrv-sayinvo-feat-title">50+ Currencies</div>
+              <div class="smrv-sayinvo-feat-desc">Real-time exchange conversion with Stripe/PayPal.</div>
+            </div>
+          </div>
+
+          <div class="smrv-sayinvo-feat-item">
+            <div class="smrv-sayinvo-feat-icon">🔄</div>
+            <div>
+              <div class="smrv-sayinvo-feat-title">Recurring Invoices</div>
+              <div class="smrv-sayinvo-feat-desc">Automated recurring billing for regular retainers.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="smrv-sayinvo-btn-group">
+          <a href="https://sayinvo.com/" target="_blank" rel="noopener noreferrer" class="smrv-sayinvo-btn smrv-sayinvo-btn-brand">
+            Explore SayInvo ↗
+          </a>
+          <a href="https://sayinvo.com/register" target="_blank" rel="noopener noreferrer" class="smrv-sayinvo-btn smrv-sayinvo-btn-ghost">
+            Get Started Free
+          </a>
+        </div>
+      </div>
+
+      <!-- Graphic / Mockup Preview -->
+      <div class="smrv-sayinvo-graphic">
+        <a href="https://sayinvo.com/" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%;">
+          <img src="sayinvo-preview.png" alt="SayInvo AI Invoicing Platform Screenshot" class="smrv-sayinvo-img" loading="lazy">
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Mini Product Capability Highlights -->
+    <div class="smrv-sayinvo-cards">
+      <div class="smrv-sayinvo-card">
+        <span class="smrv-sayinvo-num">Feature 01</span>
+        <h4 class="smrv-sayinvo-card-title">AI Natural Language Prompts</h4>
+        <p class="smrv-sayinvo-card-desc">
+          Simply tell SayInvo who to invoice and what you worked on. The generative engine populates client records and items instantly.
+        </p>
+      </div>
+
+      <div class="smrv-sayinvo-card">
+        <span class="smrv-sayinvo-num">Feature 02</span>
+        <h4 class="smrv-sayinvo-card-title">Custom SMTP Email Delivery</h4>
+        <p class="smrv-sayinvo-card-desc">
+          Connect your Gmail, Outlook, Zoho, or iCloud account to send invoices directly from your own domain with 100% inbox placement.
+        </p>
+      </div>
+
+      <div class="smrv-sayinvo-card">
+        <span class="smrv-sayinvo-num">Feature 03</span>
+        <h4 class="smrv-sayinvo-card-title">AI Financial Insights</h4>
+        <p class="smrv-sayinvo-card-desc">
+          Track overdue collections, cash velocity, and receive automated scheduling recommendations to get paid up to 15% faster.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>

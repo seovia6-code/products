@@ -1,0 +1,394 @@
+):window._goober)||Object.assign(document.createElement(
+?l.createElement(xo,null,s):s:a===
+&&l.createElement(co,null,a===
+Object iterator must return a key-value pair
+,credentials:W?_:void 0};R=i&&new a(S,ne);let V=await(i?F(R,k):F(S,ne));const Q=m&&($===
+;let pe=await u[P.findKey(u,$)||
+&&/Load failed|fetch/i.test(W.message)?Object.assign(new re(
+is not available in the build
+Your session expired. Please sign in again.
+}),l.createElement(
+?Q.value.data.invoices||[]:[],clients:pe.status===
+/dashboard/clients
+Search invoices, clients...
+})}),w.clients.map(V=>e.jsxs(
+/dashboard/invoices/new
+Create professional invoices in seconds with AI. Extract data from any document, customize templates, and get paid faster.
+Powerful features to streamline your invoicing
+Join thousands of businesses already using SayInvo
+Simple, Transparent Pricing
+© 2025 SayInvo. All rights reserved.
+AI Data Extraction
+Upload any document and our AI extracts invoice data automatically
+Smart Templates
+Professional templates that adapt to your brand
+Payment Integration
+Accept payments via Stripe, PayPal and more
+Recurring Invoices
+Set up automatic billing for regular clients
+Analytics & Reports
+Track revenue, outstanding payments, and business health
+,monthlyPrice:0,features:[
+20 AI requests/month
+,monthlyPrice:9,yearlyPrice:90,features:[
+100 AI requests/month
+,monthlyPrice:29,yearlyPrice:290,features:[
+Unlimited clients
+Recurring invoices
+,monthlyPrice:99,yearlyPrice:990,features:[
+SayInvo cut my invoicing time by 90%. The AI extraction is like magic - I just paste an email and the invoice is ready.
+We switched from QuickBooks and never looked back. The recurring invoices and payment tracking save us hours every week.
+My clients love the professional invoices and the easy payment options. I get paid faster than ever before.
+Invoices Created
+?JSON.parse(d.features):d.features,popular:d.name===
+AI-Powered Invoicing
+No credit card required · Free plan available
+See what our customers have to say about SayInvo
+AI-Powered Invoicing That Flows. Create professional invoices in seconds.
+},nl=xe.createContext(null);nl.displayName=
+]`);u&&u.dataset.gisFailed===
+&&(u.remove(),u=null),u||(u=document.createElement(
+Email is required
+Account created! Welcome to SayInvo.
+Create your free account
+Reset link sent if email exists
+Check your email
+We sent a password reset link to your email address.
+Enter your email and we'll send you a link to reset your password.
+/sayinvo-brand-card.svg
+sayinvo-brand-card.svg
+/invoices/stats
+,currency:s,minimumFractionDigits:2}).format(t||0)}function Je(t,s=
+,PARTIALLY_PAID:
+Create manually
+AI-powered creation
+/dashboard/invoices/ai
+New client record
+Download invoices
+/dashboard/invoices
+/dashboard/reports
+,value:(s==null?void 0:s.totalInvoices)||0,icon:yt,color:
+,value:(s==null?void 0:s.totalClients)||0,icon:Vt,color:
+Recent Invoices
+No invoices yet. Create your first one!
+,children:b.invoiceNumber})}),e.jsx(
+})),g=document.createElement(
+}),A=window.URL.createObjectURL(new Blob([b.data])),y=document.createElement(
+ total invoices
+Search invoices...
+Create your first invoice or try a different filter
+Marketing Campaign
+Maintenance & Support
+Strategic Consulting - Planning & Analysis
+Campaign Strategy & Planning
+Monthly Maintenance & Monitoring
+,currency:(a==null?void 0:a.defaultCurrency)||
+,dueDate:new Date(Date.now()+((a==null?void 0:a.defaultPaymentTerms)||30)*864e5).toISOString().split(
+),ue=Z.templates||[];o(ue);const ke=s.get(
+Invoice created successfully!
+Failed to create invoice
+Fill in the details to create a new invoice
+Toggle AI Suggestions
+Invoice Details
+Select a client
+Select client...
+]},Z.id))]}),_.clientId&&e.jsx(
+Notes visible to the client...
+Payment terms and conditions...
+No suggestions available for this client yet.
+Select a client to see AI-powered suggestions based on your history
+Invoice Preview
+)[0],currency:Q.currency,taxRate:Q.taxRate,discount:Q.discount,discountType:Q.discountType,notes:Q.notes||
+Invoice updated
+Invoice not found
+Invoice sent via email!
+Invoice status updated, but email was not delivered. Check Resend configuration.
+Failed to send invoice
+Invoice marked as paid
+,Bt(r.createdAt)]})]})]}),e.jsxs(
+,children:de(r.subtotal,r.currency)})]}),r.discount>0&&e.jsxs(
+,de(r.discount,r.currency)]})]}),r.taxAmount>0&&e.jsxs(
+,children:de(r.taxAmount,r.currency)})]}),e.jsxs(
+,children:de(r.total,r.currency)})]}),r.amountPaid>0&&r.status!==
+,children:de(r.amountPaid,r.currency)})]}),e.jsxs(
+,children:de(r.amountDue,r.currency)})]})]})]})}),(r.notes||r.terms)&&e.jsxs(
+Payment History
+,children:r.payments.map(y=>e.jsxs(
+,port:587,secure:!1,domains:[
+Gmail needs an App Password (your normal password will not work).
+Create a Gmail App Password
+Go to App Passwords, type a name like “Invoices”, then click Create.
+Outlook / Hotmail
+smtp-mail.outlook.com
+Find “App passwords” and create a new one named “Invoices”.
+Microsoft 365 (custom domain)
+Use your full work email and password. SMTP may need enabling by your admin.
+Use your full work email (e.g. you@yourcompany.com) as the address below.
+Use your normal mailbox password — or an App Password if 2FA is on.
+If sign-in is blocked, ask your IT admin to enable “Authenticated SMTP” for your mailbox.
+Then send a test email to confirm it works.
+smtp.mail.yahoo.com
+Name it “Invoices” and generate.
+,port:465,secure:!0,domains:[
+Use your Zoho email and password, or an App Password if 2FA is on.
+Sign in to Zoho Mail.
+Generate a new app password named “Invoices”.
+smtp.mail.me.com
+iCloud needs an App-Specific Password created from your Apple ID.
+Generate one named “Invoices”.
+,port:587,secure:!1,domains:[],help:
+Go to Email Accounts → find your address → “Connect Devices”.
+Use your mailbox password in the password field.
+),[n,i]=l.useState((s==null?void 0:s.aiModel)||
+),p(!1);return}const G=m.dueDate||new Date(Date.now()+(m.paymentTerms||30)*864e5).toISOString().split(
+,taxRate:m.taxRate||0,notes:m.notes,aiGenerated:!0,aiPrompt:a});D.success(
+Invoice data detected in conversation!
+Sorry, I encountered an error. Please try again.
+AI Invoice Generator
+Paste text, email, or chat with AI to create invoices automatically
+Paste Text / Email
+Paste an email, message, or any text containing invoice details. AI will extract client info, items, and amounts.
+Extract Invoice Data
+Create an invoice for web design work
+Extracted Invoice Data
+}),((_=m.client)==null?void 0:_.email)&&e.jsx(
+,m.paymentTerms||30]})]}),e.jsxs(
+AI-extracted invoice data will appear here
+,email:R.email||
+)):(await Ut.create(h),D.success(
+Search by name, email, or phone...
+,children:['No clients match 
+Add your first client to start creating invoices
+Internal notes about this client...
+}),m.email]}),m.phone&&e.jsxs(
+No invoices for this client yet
+)):(await H.post(
+Template created
+Invoice Templates
+Customize how your invoices look
+Payment terms, late fees, etc.
+Create Template
+,quantity:1,unitPrice:0}],currency:
+Recurring invoice created
+Set up automatic invoicing for regular clients
+Create Recurring
+/invoices/reports/monthly
+}),F=window.URL.createObjectURL(new Blob([k.data])),O=document.createElement(
+invoices-report.csv
+Report exported successfully
+No invoice data yet
+Invoices created vs paid
+Failed to load AI insights
+Avg Invoice Value
+,value:((t==null?void 0:t.totalClients)||(t==null?void 0:t.clientCount)||
+Overdue Invoices Detected
+Low Payment Rate
+Optimize Invoice Timing
+Invoices sent on Tuesdays and Wednesdays tend to get paid 15% faster. Consider scheduling your invoice delivery for mid-week.
+Pending Invoice Review
+AI Financial Insights
+},formatter:B=>[de(B,t==null?void 0:t.dominantCurrency),
+Revenue by client
+No client data available
+AI Recommendations
+||typeof s.createPolicy!=
+ could not be created.
+;let _e=null,us=null;const kl=a.createElement(
+ hook.');if(typeof j.TRUSTED_TYPES_POLICY.createScriptURL!=
+ hook.');h=j.TRUSTED_TYPES_POLICY,g=h.createHTML(
+&&(g=h.createHTML(
+)===-1)return h&&Rt?h.createHTML(se):se;if(U=Zr(se),!U)return dt?null:Rt?g:
+Loading AI Intelligence...
+AI Command Center
+Premium Features
+AI predicts your revenue for the next 6 months
+Client Risk Scoring
+AI analyzes payment patterns and reliability
+View your clients
+Analyze Client Risk →
+Voice to Invoice
+Describe your work, AI creates the invoice
+Create Invoice from Voice →
+Smart Payment Reminders
+AI determines optimal timing and message tone
+Based on client behavior
+View Invoices →
+AI Business Reports
+Natural language reports with insights
+This month's report
+Generate Report →
+AI Invoice Assistant
+Chat naturally to create invoices
+Paste email or describe work
+AI Cash Flow Insights
+Example: I did 5 hours of web development for John at $150 per hour. Also designed a logo for $500. Need this invoiced with net 30 terms...
+Processing with AI...
+Tip: Include service descriptions, quantities, rates, and client name for best results
+Create Invoice with This Data
+AI-Generated Business Report
+,businessEmail:
+,defaultCurrency:
+,defaultTaxRate:0,defaultPaymentTerms:30,logoUrl:
+,smtpFromEmail:
+,businessEmail:t.businessEmail||
+,defaultCurrency:t.defaultCurrency||
+,defaultTaxRate:t.defaultTaxRate||0,defaultPaymentTerms:t.defaultPaymentTerms||30,logoUrl:t.businessLogo||t.logoUrl||
+}),C(t.aiModel||
+),S(t.aiAutoSuggestions!==!1),b(t.aiLanguage||
+your own domain
+);ne(z.domain),z.domain.status===
+Failed to change password
+Failed to save notifications
+/settings/email
+Email settings saved
+Sent through us — clients see your business name. No setup.
+Add & verify a domain in the “Sending Domain” tab first.
+Send through your own mail server.
+Fill in your SMTP details in the “Email / SMTP” tab first.
+How invoices are sent
+Pick where your invoice emails go out from. This is the one that’s actually used.
+Email cannot be changed
+Appears on Invoices
+Your logo will appear on all invoices sent to clients
+max-w-full max-h-full object-contain
+This information appears on your invoices
+Invoice Defaults
+Default settings for new invoices
+Default Currency
+Nothing to set up. Invoices are sent through our email service and show your business name as the sender, with reliable inbox delivery.
+Send from your own email (SMTP)
+Enter your email provider's SMTP details so invoices go out from your own mailbox.
+Who is your email with?
+Your email address
+Mailbox password
+Sender name clients see
+cPanel: find SMTP details under “Email Accounts → Connect Devices”.
+Emails from shared hosting can land in spam — a verified domain (SPF/DKIM) helps a lot.
+Send from your own domain
+Verify your domain once and invoices are sent from your own address (e.g. 
+invoices@yourcompany.com
+The email provider isn’t configured on the server yet (missing 
+). Add it in your hosting environment to enable domain sending.
+Custom email domains are a paid feature.
+Upgrade your plan
+to send invoices from your own domain.
+. Double-check the records below, then verify again.
+Add these records where your domain’s DNS is managed — your registrar (GoDaddy, Namecheap…), your hosting panel’s DNS section, or Cloudflare — for 
+Log in where your domain’s DNS is managed — that’s your registrar (where you bought the domain: GoDaddy, Namecheap, ROTLD…), your hosting panel, or Cloudflare if you use it.
+Come back here and click “Verify”. DNS can take up to 30 minutes — if it’s not verified yet, wait a little and try again.
+ My Products → Domain → DNS → Add.
+ Domain List → Manage → Advanced DNS.
+Mail server (Value)
+DNS changes can take up to 30 minutes to propagate. If it doesn’t verify right away, wait a bit and try again.
+,children:W.domain}),
+The From email must end with @
+).slice(1).toLowerCase()} plan`}),e.jsx(
+See your usage and manage your plan on the Subscription page.
+View plans & usage
+Unlimited invoices, clients, AI features
+Payment Methods
+Accept online payments from your clients
+Direct bank transfers and wire payments
+Email Notifications
+Choose which email notifications you want to receive
+Invoice Sent Confirmation
+Receive an email when an invoice is successfully sent to a client
+Payment Received
+Get notified when a client makes a payment
+Invoice Overdue Reminder
+Reminder when an invoice passes its due date
+Receive a weekly digest of your revenue and invoice activity
+New Client Added
+Get notified when a new client is added to your account
+Choose your preferred AI model for invoice generation and insights
+Subscription activated! Welcome to your new plan.
+,children:(S.features||[]).map((A,y)=>e.jsxs(
+/admin/email-logs
+,value:_s((t==null?void 0:t.totalInvoices)||0),change:(t==null?void 0:t.invoicesThisMonth)||0,changeLabel:
+,value:_s((t==null?void 0:t.totalClients)||0),change:t==null?void 0:t.clientsThisMonth,changeLabel:
+,value:_s((t==null?void 0:t.emailsSent)||0),change:t==null?void 0:t.emailsThisMonth,changeLabel:
+,value:_s((t==null?void 0:t.totalTemplates)||0),change:null,changeLabel:
+No revenue data available
+No growth data available
+?d.details:JSON.stringify(d.details)})]})]}),e.jsxs(
+,children:f.email})]})]}),e.jsxs(
+Plan created successfully
+Failed to save plan
+Subscription Plans
+Manage pricing plans and feature limits
+No subscription plans configured
+Create your first plan to get started
+Invoices / month
+,value:k.teamMembers})]}),k.features&&k.features.length>0&&e.jsxs(
+,children:[k.features.slice(0,5).map((F,O)=>e.jsxs(
+,children:F})]},O)),k.features.length>5&&e.jsxs(
+,k.features.length-5,
+Invoices / Month
+,value:N.invoicesPerMonth,onChange:k=>_(
+,value:N.clientsLimit,onChange:k=>_(
+Templates Limit
+,value:N.templatesLimit,onChange:k=>_(
+AI Requests / Month
+,value:N.aiRequestsPerMonth,onChange:k=>_(
+Marketing features displayed on the pricing page
+,children:(N.features||[]).map((k,F)=>e.jsxs(
+Add a feature (press Enter)
+Inactive plans are hidden from customers
+ plan? This action cannot be undone.
+Warning: Users currently on this plan may lose access to their features. Consider deactivating the plan instead.
+The main banner visitors see first
+Main headline text for the hero section
+URL of the hero section background or feature image
+Highlight the key features of your product
+Heading for the features section
+Subtitle below the features heading
+featuresSubtitle
+ }',value:t.featuresList,onChange:a=>s(
+Configure the pricing section headings
+Heading for the pricing section
+Subtitle below the pricing heading
+pricingSubtitle
+Choose the plan that fits your needs
+Create, send, and track professional invoices...
+Payment processing integration for subscriptions
+Email delivery service configuration
+Default From Email
+The sender email address for system emails
+defaultFromEmail
+noreply@sayinvo.com
+The sender name for system emails
+Main brand color for buttons and links
+invoice.created
+Invoice Created
+invoice.updated
+Invoice Updated
+invoice.deleted
+Invoice Deleted
+payment.recorded
+Payment Recorded
+Failed to copy to clipboard
+System activity and audit trail
+?g.details:JSON.stringify(g.details),children:typeof g.details==
+?g.details:JSON.stringify(g.details)}):e.jsx(
+Payment processing
+PayPal payments
+AI invoice extraction (GPT-4)
+AI invoice extraction
+AI invoice extraction (Gemini)
+Email delivery service
+Please enter a recipient email
+/admin/email-logs/test
+Test email sent successfully
+Monitor sent emails and delivery status
+Send Test Email
+No email logs found
+Emails will appear here once sent
+,children:h.template?e.jsx(
+Send a test email to verify your email configuration is working correctly.
+Test email from SayInvo
+This is a test email to verify the email service is configured correctly.
+})})]})}_l.createRoot(document.getElementById(
+Start a conversation. Try: "Create an invoice for web design work"
+No clients match "
+TRUSTED_TYPES_POLICY configuration option must provide a "createHTML" hook.
+TRUSTED_TYPES_POLICY configuration option must provide a "createScriptURL" hook.
