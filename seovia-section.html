@@ -1,0 +1,476 @@
+<!-- ==========================================================================
+     SAMAARAV "OUR PRODUCTS" EMBEDDABLE SECTION SNIPPET: SEOVIA
+     Featuring SeoVia (https://www.seo-via.com/)
+     Copy and paste directly into any page (WordPress, Elementor, HTML, Next.js)
+     ========================================================================== -->
+
+<!-- Scoped CSS for SeoVia Product Section -->
+<style>
+  .smrv-seovia-wrapper {
+    font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #fafbfa;
+    color: #1f2937;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .smrv-seovia-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Section Header */
+  .smrv-seovia-head {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 56px;
+  }
+
+  .smrv-seovia-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    background-color: #eef2ff;
+    color: #4f46e5;
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    margin-bottom: 16px;
+  }
+
+  .smrv-seovia-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #6366f1;
+    animation: smrv-seovia-pulse 2s infinite ease-in-out;
+  }
+
+  @keyframes smrv-seovia-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.85); }
+  }
+
+  .smrv-seovia-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+  }
+
+  .smrv-seovia-title span {
+    background: linear-gradient(135deg, #0f172a 15%, #4f46e5 60%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .smrv-seovia-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    color: #64748b;
+    line-height: 1.7;
+  }
+
+  /* Flagship Product Showcase (Open 2-Column Layout) */
+  .smrv-seovia-box {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .smrv-seovia-info {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .smrv-seovia-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+
+  .smrv-seovia-flagship {
+    background: #0f172a;
+    color: #818cf8;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .smrv-seovia-tech {
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .smrv-seovia-link {
+    font-size: 0.78rem;
+    color: #64748b;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s ease;
+  }
+
+  .smrv-seovia-link:hover {
+    color: #4f46e5;
+  }
+
+  .smrv-seovia-name {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .smrv-seovia-tagline {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #6366f1;
+    margin-bottom: 16px;
+  }
+
+  .smrv-seovia-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  /* Metric Row */
+  .smrv-seovia-metrics {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+
+  .smrv-seovia-metric-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .smrv-seovia-metric-val {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #4f46e5;
+    line-height: 1.1;
+  }
+
+  .smrv-seovia-metric-lbl {
+    font-size: 0.76rem;
+    color: #64748b;
+    margin-top: 2px;
+  }
+
+  .smrv-seovia-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .smrv-seovia-feat-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .smrv-seovia-feat-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: #eef2ff;
+    color: #4f46e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .smrv-seovia-feat-text h5 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 2px;
+  }
+
+  .smrv-seovia-feat-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.4;
+  }
+
+  .smrv-seovia-actions {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .smrv-seovia-btn-primary {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: #ffffff;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 13px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+  }
+
+  .smrv-seovia-btn-primary:hover {
+    background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(79, 70, 229, 0.45);
+    color: #ffffff;
+  }
+
+  .smrv-seovia-btn-secondary {
+    background: #ffffff;
+    color: #0f172a;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 13px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid #cbd5e1;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+  }
+
+  .smrv-seovia-btn-secondary:hover {
+    border-color: #0f172a;
+    transform: translateY(-2px);
+  }
+
+  .smrv-seovia-media {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px -10px rgba(79, 70, 229, 0.25), 0 0 0 1px rgba(99, 102, 241, 0.15);
+    transition: all 0.3s ease;
+    background: #0f172a;
+  }
+
+  .smrv-seovia-media:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 60px -12px rgba(79, 70, 229, 0.4), 0 0 0 1px rgba(99, 102, 241, 0.45);
+  }
+
+  .smrv-seovia-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .smrv-seovia-badge-live {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(8px);
+    padding: 6px 14px;
+    border-radius: 9999px;
+    border: 1px solid rgba(99, 102, 241, 0.4);
+    font-size: 0.74rem;
+    color: #818cf8;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .smrv-seovia-badge-live span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #6366f1;
+    box-shadow: 0 0 6px #6366f1;
+  }
+
+  @media (max-width: 991px) {
+    .smrv-seovia-box {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .smrv-seovia-features {
+      grid-template-columns: 1fr;
+    }
+    .smrv-seovia-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+    .smrv-seovia-btn-primary, .smrv-seovia-btn-secondary {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>
+
+<!-- ======================================================================
+     SEOVIA EMBEDDABLE SECTION MARKUP
+     ====================================================================== -->
+<section class="smrv-seovia-wrapper" id="seovia-product">
+  <div class="smrv-seovia-container">
+    
+    <!-- Section Head -->
+    <div class="smrv-seovia-head">
+      <div class="smrv-seovia-badge">
+        <span class="smrv-seovia-dot"></span>
+        AI-Powered SEO Intelligence
+      </div>
+      <h2 class="smrv-seovia-title">
+        Your AI SEO Copilot for <span>Data-Driven Growth</span>
+      </h2>
+      <p class="smrv-seovia-subtitle">
+        Eliminate organic search guesswork. Connect Google Analytics 4 &amp; Google Search Console to detect low CTR anomalies, formulate intent-backed content briefs, and track brand visibility in ChatGPT &amp; Perplexity.
+      </p>
+    </div>
+
+    <!-- Product Showcase Row -->
+    <div class="smrv-seovia-box">
+      
+      <!-- Info Left -->
+      <div class="smrv-seovia-info">
+        <div class="smrv-seovia-meta">
+          <span class="smrv-seovia-flagship">Flagship Product</span>
+          <span class="smrv-seovia-tech">GA4 + GSC + Multi-LLM</span>
+          <a href="https://www.seo-via.com/" target="_blank" rel="noopener noreferrer" class="smrv-seovia-link">
+            seo-via.com ↗
+          </a>
+        </div>
+
+        <h3 class="smrv-seovia-name">SeoVia</h3>
+        <div class="smrv-seovia-tagline">Verified Google Data · AI Anomaly Radar · White-Label Reports</div>
+
+        <p class="smrv-seovia-desc">
+          Powered by verified first-party Google data, <strong>SeoVia</strong> transforms raw search metrics into prioritized action items. Features automated content decay detection, AI search console monitoring for generative LLMs, and 1-click executive PDF reporting.
+        </p>
+
+        <!-- Metric Indicators -->
+        <div class="smrv-seovia-metrics">
+          <div class="smrv-seovia-metric-item">
+            <span class="smrv-seovia-metric-val">45.2K</span>
+            <span class="smrv-seovia-metric-lbl">Organic Clicks (+12.3%)</span>
+          </div>
+          <div class="smrv-seovia-metric-item">
+            <span class="smrv-seovia-metric-val">1.2M</span>
+            <span class="smrv-seovia-metric-lbl">Impressions (+8.7%)</span>
+          </div>
+          <div class="smrv-seovia-metric-item">
+            <span class="smrv-seovia-metric-val">14.2</span>
+            <span class="smrv-seovia-metric-lbl">Avg SERP Position</span>
+          </div>
+        </div>
+
+        <!-- 4 Key Feature Bullets -->
+        <div class="smrv-seovia-features">
+          <div class="smrv-seovia-feat-item">
+            <div class="smrv-seovia-feat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <div class="smrv-seovia-feat-text">
+              <h5>Google-First Data</h5>
+              <p>Direct GA4 &amp; GSC OAuth sync for real impressions and clicks.</p>
+            </div>
+          </div>
+
+          <div class="smrv-seovia-feat-item">
+            <div class="smrv-seovia-feat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            </div>
+            <div class="smrv-seovia-feat-text">
+              <h5>AI Insights Engine</h5>
+              <p>Detect low CTR, content decay, and near-page-1 rank jumpers.</p>
+            </div>
+          </div>
+
+          <div class="smrv-seovia-feat-item">
+            <div class="smrv-seovia-feat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            </div>
+            <div class="smrv-seovia-feat-text">
+              <h5>Content Planner</h5>
+              <p>Data-backed briefs, semantic entity maps, and FAQ schemas.</p>
+            </div>
+          </div>
+
+          <div class="smrv-seovia-feat-item">
+            <div class="smrv-seovia-feat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <div class="smrv-seovia-feat-text">
+              <h5>AI Visibility Monitor</h5>
+              <p>Track ChatGPT, Perplexity &amp; Gemini citations for your brand.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTAs -->
+        <div class="smrv-seovia-actions">
+          <a href="https://www.seo-via.com/" target="_blank" rel="noopener noreferrer" class="smrv-seovia-btn-primary">
+            Explore Platform ↗
+          </a>
+          <a href="https://www.seo-via.com/auth/register" target="_blank" rel="noopener noreferrer" class="smrv-seovia-btn-secondary">
+            Start Free Trial
+          </a>
+          <a href="seovia.html" class="smrv-seovia-link" style="font-size: 0.85rem; font-weight: 600;">
+            View Detailed Product Page →
+          </a>
+        </div>
+      </div>
+
+      <!-- Mockup Right -->
+      <div class="smrv-seovia-media">
+        <a href="https://www.seo-via.com/" target="_blank" rel="noopener noreferrer">
+          <img src="seovia-preview.png" alt="SeoVia AI SEO Copilot Dashboard" loading="lazy">
+          <div class="smrv-seovia-badge-live">
+            <span></span>
+            Live at seo-via.com
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
