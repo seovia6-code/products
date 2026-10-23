@@ -1793,69 +1793,69 @@ html, body {
 
 /* SeoVia Switcher Pill */
 .product-switch-pill.active-seovia {
-  background: #0f172a;
-  color: #818cf8;
-  border-color: #6366f1;
-  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.28);
+  background: #0f110f;
+  color: #18cb96;
+  border-color: #18cb96;
+  box-shadow: 0 4px 16px rgba(24, 203, 150, 0.22);
 }
 
 .switch-dot.seovia {
-  background: #6366f1;
-  box-shadow: 0 0 8px #6366f1;
+  background: #18cb96;
+  box-shadow: 0 0 8px #18cb96;
 }
 
 /* SeoVia Badge */
 .badge-seovia {
-  background-color: #eef2ff;
-  color: #4f46e5;
-  border: 1px solid rgba(99, 102, 241, 0.35);
+  background-color: #e6f9f3;
+  color: #0d825f;
+  border: 1px solid rgba(24, 203, 150, 0.35);
 }
 
 .badge-seovia .pulse-dot {
-  background-color: #6366f1;
+  background-color: #18cb96;
 }
 
 /* SeoVia Text Gradient */
 .text-gradient-seovia {
-  background: linear-gradient(135deg, #0f172a 15%, #4f46e5 60%, #06b6d4 100%);
+  background: linear-gradient(135deg, #0f110f 20%, #18cb96 70%, #00d5a0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* SeoVia Button */
 .btn-seovia {
-  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
-  color: #ffffff;
-  font-weight: 600;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+  background: #18cb96;
+  color: #0f110f;
+  font-weight: 700;
+  border: 1px solid rgba(24, 203, 150, 0.2);
+  box-shadow: 0 4px 14px rgba(24, 203, 150, 0.32);
   transition: var(--transition-smooth);
 }
 
 .btn-seovia:hover {
-  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  background: #14b584;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.45);
-  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(24, 203, 150, 0.45);
+  color: #0f110f;
 }
 
 /* SeoVia Mockup Media */
 .hero-spotlight-media.seovia .hero-mockup-img {
   border-radius: var(--radius-md);
-  border: 1px solid rgba(99, 102, 241, 0.25);
-  box-shadow: 0 20px 45px -10px rgba(79, 70, 229, 0.25), 0 0 0 1px rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(24, 203, 150, 0.25);
+  box-shadow: 0 20px 45px -10px rgba(24, 203, 150, 0.22), 0 0 0 1px rgba(24, 203, 150, 0.15);
   transition: var(--transition-smooth);
 }
 
 .hero-spotlight-media.seovia .hero-mockup-img:hover {
   transform: translateY(-4px);
-  box-shadow: 0 28px 60px -12px rgba(79, 70, 229, 0.4), 0 0 0 1px rgba(99, 102, 241, 0.45);
+  box-shadow: 0 28px 60px -12px rgba(24, 203, 150, 0.35), 0 0 0 1px rgba(24, 203, 150, 0.4);
 }
 
 /* Featured Pro Card for SeoVia */
 .pricing-card.featured-card-seovia {
-  border-color: #6366f1;
-  box-shadow: 0 20px 45px -8px rgba(99, 102, 241, 0.22), 0 0 0 1px #6366f1;
+  border-color: #18cb96;
+  box-shadow: 0 20px 45px -8px rgba(24, 203, 150, 0.22), 0 0 0 1px #18cb96;
   position: relative;
 }
 
@@ -1864,8 +1864,8 @@ html, body {
   top: -13px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
-  color: #ffffff;
+  background: #18cb96;
+  color: #0f110f;
   font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -1907,16 +1907,16 @@ html, body {
 }
 
 .seovia-input:focus {
-  border-color: #6366f1;
+  border-color: #18cb96;
   background: #ffffff;
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  box-shadow: 0 0 0 3px rgba(24, 203, 150, 0.18);
 }
 
 .seovia-tool-btn {
   height: 52px;
   padding: 0 28px;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   white-space: nowrap;
   border: none;
   cursor: pointer;
@@ -1926,11 +1926,11 @@ html, body {
 .simulator-result-panel {
   margin-top: 24px;
   border-radius: var(--radius-md);
-  background: #0f172a;
+  background: #0f110f;
   color: #f8fafc;
   padding: 24px;
   display: none;
-  border: 1px solid rgba(99, 102, 241, 0.3);
+  border: 1px solid rgba(24, 203, 150, 0.3);
   animation: fadeInDown 0.35s ease;
 }
 
@@ -1971,8 +1971,8 @@ html, body {
 }
 
 .faq-item[open] {
-  border-color: #6366f1;
-  box-shadow: 0 4px 18px -4px rgba(99, 102, 241, 0.12);
+  border-color: #18cb96;
+  box-shadow: 0 4px 18px -4px rgba(24, 203, 150, 0.15);
 }
 
 .faq-summary {
@@ -2004,7 +2004,7 @@ html, body {
 
 .faq-item[open] .faq-icon {
   transform: rotate(180deg);
-  color: #6366f1;
+  color: #18cb96;
 }
 
 .faq-body {
