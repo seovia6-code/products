@@ -1815,11 +1815,9 @@ html, body {
   background-color: #18cb96;
 }
 
-/* SeoVia Text Gradient */
+/* SeoVia Heading Accent */
 .text-gradient-seovia {
-  background: linear-gradient(135deg, #0f110f 20%, #18cb96 70%, #00d5a0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-dark);
 }
 
 /* SeoVia Button */
