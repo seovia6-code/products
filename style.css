@@ -2021,4 +2021,131 @@ html, body {
   }
 }
 
+/* ==========================================================================
+   MAILZEVO (MAILZEVO.COM) - SAMAARAV PRODUCT BRANDING & STYLES
+   ========================================================================== */
+
+/* Mailzevo Switcher Pill */
+.product-switch-pill.active-mailzevo {
+  background: #0f110f;
+  color: #18cb96;
+  border-color: #18cb96;
+  box-shadow: 0 4px 16px rgba(24, 203, 150, 0.22);
+}
+
+.switch-dot.mailzevo {
+  background: #18cb96;
+  box-shadow: 0 0 8px #18cb96;
+}
+
+/* Mailzevo Button */
+.btn-mailzevo {
+  background: #18cb96;
+  color: #0f110f;
+  font-weight: 700;
+  border: 1px solid rgba(24, 203, 150, 0.2);
+  box-shadow: 0 4px 14px rgba(24, 203, 150, 0.32);
+  transition: var(--transition-smooth);
+}
+
+.btn-mailzevo:hover {
+  background: #14b584;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(24, 203, 150, 0.45);
+  color: #0f110f;
+}
+
+/* Mailzevo Mockup Media */
+.hero-spotlight-media.mailzevo .hero-mockup-img {
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(24, 203, 150, 0.25);
+  box-shadow: 0 20px 45px -10px rgba(24, 203, 150, 0.22), 0 0 0 1px rgba(24, 203, 150, 0.15);
+  transition: var(--transition-smooth);
+}
+
+.hero-spotlight-media.mailzevo .hero-mockup-img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 60px -12px rgba(24, 203, 150, 0.35), 0 0 0 1px rgba(24, 203, 150, 0.4);
+}
+
+/* Featured Professional Card for Mailzevo */
+.pricing-card.featured-card-mailzevo {
+  border-color: #18cb96;
+  box-shadow: 0 20px 45px -8px rgba(24, 203, 150, 0.22), 0 0 0 1px #18cb96;
+  position: relative;
+}
+
+.featured-pill-tag-mailzevo {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #18cb96;
+  color: #0f110f;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+}
+
+/* Interactive Subject Line & Deliverability Tool Box */
+.mailzevo-interactive-tool-box {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-md);
+  margin-top: 24px;
+  position: relative;
+}
+
+.mailzevo-input-row {
+  display: flex;
+  gap: 12px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.mailzevo-input {
+  flex: 1;
+  height: 52px;
+  padding: 0 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  background: #f8fafc;
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.mailzevo-input:focus {
+  border-color: #18cb96;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(24, 203, 150, 0.18);
+}
+
+.mailzevo-tool-btn {
+  height: 52px;
+  padding: 0 28px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .mailzevo-input-row {
+    flex-direction: column;
+  }
+  .mailzevo-tool-btn {
+    width: 100%;
+  }
+}
+
+
 

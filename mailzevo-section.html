@@ -1,0 +1,437 @@
+<!-- ==========================================================================
+     SAMAARAV "OUR PRODUCTS" EMBEDDABLE SECTION SNIPPET: MAILZEVO
+     Featuring Mailzevo (https://mailzevo.com/)
+     Copy and paste directly into any page (WordPress, Elementor, HTML, Next.js)
+     ========================================================================== -->
+
+<!-- Scoped CSS for Mailzevo Product Section -->
+<style>
+  .smrv-mailzevo-wrapper {
+    font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #fafbfa;
+    color: #1f2937;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .smrv-mailzevo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Section Header */
+  .smrv-mailzevo-head {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 56px;
+  }
+
+  .smrv-mailzevo-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    color: #0f110f;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+  }
+
+  .smrv-mailzevo-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    color: #64748b;
+    line-height: 1.7;
+  }
+
+  /* Flagship Product Showcase (Open 2-Column Layout) */
+  .smrv-mailzevo-box {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .smrv-mailzevo-info {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .smrv-mailzevo-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+
+  .smrv-mailzevo-flagship {
+    background: #0f110f;
+    color: #18cb96;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .smrv-mailzevo-tech {
+    background: #e6f9f3;
+    color: #0d825f;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .smrv-mailzevo-link {
+    font-size: 0.78rem;
+    color: #64748b;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s ease;
+  }
+
+  .smrv-mailzevo-link:hover {
+    color: #18cb96;
+  }
+
+  .smrv-mailzevo-name {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 700;
+    color: #0f110f;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .smrv-mailzevo-tagline {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #18cb96;
+    margin-bottom: 16px;
+  }
+
+  .smrv-mailzevo-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  /* Metric Row */
+  .smrv-mailzevo-metrics {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+
+  .smrv-mailzevo-metric-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .smrv-mailzevo-metric-val {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #18cb96;
+    line-height: 1.1;
+  }
+
+  .smrv-mailzevo-metric-lbl {
+    font-size: 0.76rem;
+    color: #64748b;
+    margin-top: 2px;
+  }
+
+  .smrv-mailzevo-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .smrv-mailzevo-feat-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .smrv-mailzevo-feat-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: #e6f9f3;
+    color: #0d825f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .smrv-mailzevo-feat-text h5 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #0f110f;
+    margin-bottom: 2px;
+  }
+
+  .smrv-mailzevo-feat-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.4;
+  }
+
+  .smrv-mailzevo-actions {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .smrv-mailzevo-btn-primary {
+    background: #18cb96;
+    color: #0f110f;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 13px 28px;
+    border-radius: 9999px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 14px rgba(24, 203, 150, 0.3);
+  }
+
+  .smrv-mailzevo-btn-primary:hover {
+    background: #14b584;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(24, 203, 150, 0.45);
+    color: #0f110f;
+  }
+
+  .smrv-mailzevo-btn-secondary {
+    background: #ffffff;
+    color: #0f110f;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 13px 26px;
+    border-radius: 9999px;
+    text-decoration: none;
+    border: 1px solid #cbd5e1;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+  }
+
+  .smrv-mailzevo-btn-secondary:hover {
+    border-color: #0f110f;
+    transform: translateY(-2px);
+  }
+
+  .smrv-mailzevo-media {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px -10px rgba(24, 203, 150, 0.2), 0 0 0 1px rgba(24, 203, 150, 0.15);
+    transition: all 0.3s ease;
+    background: #0f110f;
+  }
+
+  .smrv-mailzevo-media:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 60px -12px rgba(24, 203, 150, 0.35), 0 0 0 1px rgba(24, 203, 150, 0.4);
+  }
+
+  .smrv-mailzevo-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .smrv-mailzevo-badge-live {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: rgba(15, 17, 15, 0.88);
+    backdrop-filter: blur(8px);
+    padding: 6px 14px;
+    border-radius: 9999px;
+    border: 1px solid rgba(24, 203, 150, 0.4);
+    font-size: 0.74rem;
+    color: #18cb96;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .smrv-mailzevo-badge-live span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #18cb96;
+    box-shadow: 0 0 6px #18cb96;
+  }
+
+  @media (max-width: 991px) {
+    .smrv-mailzevo-box {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .smrv-mailzevo-features {
+      grid-template-columns: 1fr;
+    }
+    .smrv-mailzevo-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+    .smrv-mailzevo-btn-primary, .smrv-mailzevo-btn-secondary {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>
+
+<!-- ======================================================================
+     MAILZEVO EMBEDDABLE SECTION MARKUP
+     ====================================================================== -->
+<section class="smrv-mailzevo-wrapper" id="mailzevo-product">
+  <div class="smrv-mailzevo-container">
+    
+    <!-- Section Head -->
+    <div class="smrv-mailzevo-head">
+      <h2 class="smrv-mailzevo-title">
+        Create Emails That Actually Convert
+      </h2>
+      <p class="smrv-mailzevo-subtitle">
+        Stop guessing with cold outreach and marketing broadcasts. Let AI craft high-converting campaigns in seconds, optimize subject lines, and safeguard 96%+ inbox deliverability.
+      </p>
+    </div>
+
+    <!-- Product Showcase Row -->
+    <div class="smrv-mailzevo-box">
+      
+      <!-- Info Left -->
+      <div class="smrv-mailzevo-info">
+        <div class="smrv-mailzevo-meta">
+          <span class="smrv-mailzevo-flagship">Flagship Product</span>
+          <span class="smrv-mailzevo-tech">AI Generator + Multi-Provider</span>
+          <a href="https://mailzevo.com/" target="_blank" rel="noopener noreferrer" class="smrv-mailzevo-link">
+            mailzevo.com ↗
+          </a>
+        </div>
+
+        <h3 class="smrv-mailzevo-name">Mailzevo</h3>
+        <div class="smrv-mailzevo-tagline">AI Content Engine · Multi-Provider Delivery · 96% Inbox Rate</div>
+
+        <p class="smrv-mailzevo-desc">
+          Part of the Samaarav AI product ecosystem, <strong>Mailzevo</strong> automates high-converting email sequences, A/B split tests, real-time open/click analytics, and AI spam score analysis across SendGrid, Mailgun, Amazon SES, and Postmark.
+        </p>
+
+        <!-- Metric Indicators -->
+        <div class="smrv-mailzevo-metrics">
+          <div class="smrv-mailzevo-metric-item">
+            <span class="smrv-mailzevo-metric-val">10K+</span>
+            <span class="smrv-mailzevo-metric-lbl">Active Marketers</span>
+          </div>
+          <div class="smrv-mailzevo-metric-item">
+            <span class="smrv-mailzevo-metric-val">50M+</span>
+            <span class="smrv-mailzevo-metric-lbl">Emails Dispatched</span>
+          </div>
+          <div class="smrv-mailzevo-metric-item">
+            <span class="smrv-mailzevo-metric-val">35%</span>
+            <span class="smrv-mailzevo-metric-lbl">Avg Open Rate</span>
+          </div>
+        </div>
+
+        <!-- 4 Key Feature Bullets -->
+        <div class="smrv-mailzevo-features">
+          <div class="smrv-mailzevo-feat-item">
+            <div class="smrv-mailzevo-feat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+            </div>
+            <div class="smrv-mailzevo-feat-text">
+              <h5>AI Content Generator</h5>
+              <p>Instant subject lines, bodies &amp; CTAs with tone matching.</p>
+            </div>
+          </div>
+
+          <div class="smrv-mailzevo-feat-item">
+            <div class="smrv-mailzevo-feat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="smrv-mailzevo-feat-text">
+              <h5>Smart Campaigns</h5>
+              <p>Automated drips, A/B split testing &amp; smart scheduling.</p>
+            </div>
+          </div>
+
+          <div class="smrv-mailzevo-feat-item">
+            <div class="smrv-mailzevo-feat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="smrv-mailzevo-feat-text">
+              <h5>Spam Score Guard</h5>
+              <p>Pre-send AI score analysis ensuring 96%+ inbox rate.</p>
+            </div>
+          </div>
+
+          <div class="smrv-mailzevo-feat-item">
+            <div class="smrv-mailzevo-feat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <div class="smrv-mailzevo-feat-text">
+              <h5>Multi-Provider Delivery</h5>
+              <p>SendGrid, Mailgun, SES, Postmark &amp; Brevo integration.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTAs -->
+        <div class="smrv-mailzevo-actions">
+          <a href="https://mailzevo.com/" target="_blank" rel="noopener noreferrer" class="smrv-mailzevo-btn-primary">
+            Explore Platform ↗
+          </a>
+          <a href="https://mailzevo.com/register" target="_blank" rel="noopener noreferrer" class="smrv-mailzevo-btn-secondary">
+            Start Free Trial
+          </a>
+          <a href="mailzevo.html" class="smrv-mailzevo-link" style="font-size: 0.85rem; font-weight: 600;">
+            View Detailed Product Page →
+          </a>
+        </div>
+      </div>
+
+      <!-- Mockup Right -->
+      <div class="smrv-mailzevo-media">
+        <a href="https://mailzevo.com/" target="_blank" rel="noopener noreferrer">
+          <img src="mailzevo-preview.png" alt="Mailzevo AI Email Marketing Platform Dashboard" loading="lazy">
+          <div class="smrv-mailzevo-badge-live">
+            <span></span>
+            Live at mailzevo.com
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
