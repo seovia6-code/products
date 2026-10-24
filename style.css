@@ -2147,5 +2147,38 @@ html, body {
   }
 }
 
+/* ==========================================================================
+   HIGH-DEFINITION SCREENSHOT & UI MOCKUP RENDERING OPTIMIZATION
+   ========================================================================== */
+.hero-mockup-img,
+.tab-preview-img,
+.tab-mockup-image img,
+.dashboard-showcase-section img,
+.smrv-seovia-media img,
+.smrv-mailzevo-media img,
+.smrv-sayinvo-media img,
+.smrv-product-media img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.tab-preview-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(24, 203, 150, 0.22);
+  box-shadow: 0 16px 36px -10px rgba(15, 17, 15, 0.14);
+  transition: var(--transition-smooth);
+}
+
+.tab-preview-img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 42px -8px rgba(15, 17, 15, 0.2);
+}
+
+
 
 
